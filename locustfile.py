@@ -3,7 +3,7 @@ from locust import HttpLocust, TaskSet, between
 def index(l):
     l.client.get("/")
 
-class UserBehaviour(TaskSet):
+class UserBehavior(TaskSet):
     tasks = {index: 1}
 
 class WebsiteUser(HttpLocust):
