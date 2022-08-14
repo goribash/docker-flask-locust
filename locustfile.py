@@ -6,6 +6,6 @@ def index(l):
 class UserBehavior(TaskSet):
     tasks = {index: 1}
 
-class WebsiteUser(HttpLocust):
+class WebsiteUser(HttpUser):
     task_set = UserBehavior
     wait_time = between(5.0, 9.0)
