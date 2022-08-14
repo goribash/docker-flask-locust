@@ -1,4 +1,4 @@
-from locust import HttpLocust, TaskSet, between
+from locust import HttpUser, TaskSet, between
 
 def index(l):
     l.client.get("/")
